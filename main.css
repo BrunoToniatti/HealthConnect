@@ -1,0 +1,199 @@
+/* Reset de estilos para todos os elementos */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    background: #353535;
+    color: #FFF;
+}
+
+/* Estilos do título principal da jumbotron */
+.jumbotron h1 {
+    color: #353535;
+}
+
+/* Estilos para ícones */
+span.icon {
+    margin: 0 5px;
+    color: #D64541;
+}
+
+/* Estilos para títulos secundários */
+h2 {
+    color: #BDC3C7;
+}
+
+/* Estilos globais para botões */
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: inline-block; /* Alterado para inline-block */
+    margin: 30px auto 0;
+    padding: 14px 30px; /* Ajustado o padding */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 25px; /* Aumentado o raio da borda */
+    border: 2px solid transparent; /* Adicionado uma borda transparente */
+    background-color: green; /* Cor de fundo verde */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para botões ao passar o mouse */
+a.animated-button:hover,
+a.animated-button:active {
+    background-color: transparent; /* Tornar o fundo transparente */
+    border-color: green; /* Mudar a cor da borda para verde */
+    color: green; /* Mudar a cor do texto para verde */
+}
+
+/* Estilos para o efeito após o hover */
+a.animated-button:link:after,
+a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    transition: all 0.75s ease 0s;
+}
+
+/* Estilos adicionais para botões após o hover */
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+    height: 450%;
+}
+
+/* Estilos específicos para um tipo de botão */
+a.animated-button.victoria-two {
+    border: 2px solid green;
+}
+
+a.animated-button.victoria-two:after {
+    background: solid green;
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+/* Estilos do formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 35px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 10);
+}
+
+/* Estilos para o botão dentro do formulário */
+form button {
+    margin-top: 20px; /* Espaçamento superior para o botão */
+    width: 100%; /* Largura total do botão */
+    background-color: green; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    padding: 15px 0; /* Espaçamento interno */
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* Removendo a borda */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o botão de login ao passar o mouse */
+form button:hover {
+    background-color: darkgreen; /* Cor de fundo alterada ao passar o mouse */
+}
+
+/* Estilos para os títulos do formulário */
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Estilos para rótulos de campos de entrada */
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Estilos para campos de entrada */
+input {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Estilos para o espaço reservado de campos de entrada */
+input::placeholder {
+    color: #e5e5e5;
+}
+
+/* Estilos para botões */
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para os botões sociais */
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para contêineres dos botões sociais */
+.social div {
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Estilos para botões sociais ao passar o mouse */
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+/* Estilos adicionais para ícones sociais */
+.social i {
+    margin-right: 4px;
+}
